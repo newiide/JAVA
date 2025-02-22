@@ -93,7 +93,18 @@ public class Main {
 //    симетричних комбінацій цифр на електронному годиннику (наприклад 03:30).
     public static void task5(){
         System.out.println("TASK 5 ");
+        int count = 0;
+        for (int h = 0; h < 24; h++) {
+            for (int m = 0; m < 60; m++) {
+                String time = String.format("%02d:%02d", h, m);
 
+                if (time.charAt(0) == time.charAt(4) && time.charAt(1) == time.charAt(3)) {
+                    count++;
+                    System.out.print(time + " ");
+                }
+            }
+        }
+            System.out.println("\n" + count);
         System.out.println("\n");
     }
 
