@@ -264,7 +264,7 @@ public class Main {
         vehicle.displayInfo();
 
         Person person1 = new Person("Muhammad", 100);
-        Person person2 = new Person("Aljyr", 0);
+        Person person2 = new Person("Aljyr", 4);
 
         System.out.println(person1.toString());
         System.out.println(person1.hashCode());
